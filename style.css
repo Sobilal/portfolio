@@ -26,6 +26,7 @@ header{
 }
 .headertitle{
     max-width: 900px;
+    padding: 0 20px;
     z-index: 9;
 }
 
