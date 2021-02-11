@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(39, 39, 40);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/headerbg.jpg");
+    background-blend-mode: overlay;
+}
+.headertitle{
+    max-width: 900px;
+    z-index: 9;
+}
+
+header h1{
+    color: rgb(196, 196, 196);
+    text-decoration: none; 
+    font-size: 22px;
+    font-weight: 200;
+}
+
+header a{
+    font-weight: 400;
+    color: rgb(240, 210, 38);
+}
+
+header img{
+    width: 32px;
+    opacity: .3;
+}
+
+@media(max-width:768px){
+    header img{
+        width: 16px;
+    }
+}
+
+header .set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+header .set div{
+    position: absolute;
+    display: block;  
+}
+
+header .set div:nth-child(1){
+    /*ai*/
+    left: 20%;
+    top: 20%;
+    animation: animate 30s linear infinite;
+    animation-delay: -30s;
+}
+header .set div:nth-child(2){
+    /*ps*/
+    left: 10%;
+    bottom: 40%;
+    animation: animate 30s linear infinite;
+    animation-delay: -7s;
+}
+header .set div:nth-child(3){
+    /*xd*/
+    left: 30%;
+    top: 65%;
+    animation: animate 30s linear infinite;
+    animation-delay: -17s;
+}
+header .set div:nth-child(4){
+    /*figma*/
+    right: 20%;
+    top: 20px;
+    animation: animate 30s linear infinite;
+    animation-delay: -23s;
+}
+header .set div:nth-child(5){
+    /*node*/
+    right: 30%;
+    bottom: 20%;
+    animation: animate 30s linear infinite;
+    animation-delay: -11s;
+}
+header .set div:nth-child(6){
+    /*mongo*/
+    left: 8%;
+    top: 5%;
+    animation: animate 30s linear infinite;
+    animation-delay: -29s;
+}
+header .set div:nth-child(7){
+    /*html*/
+    left: 38%;
+    top: 32%;
+    animation: animate 30s linear infinite;
+    animation-delay: -17s;
+}
+header .set div:nth-child(8){
+    /*css*/
+    left: 50%;
+    bottom: 15%;
+    animation: animate 30s linear infinite;
+    animation-delay: -55s;
+}
+header .set div:nth-child(9){
+    /*js*/
+    left: 55%;
+    top: 10%;
+    animation: animate 30s linear infinite;
+    animation-delay: -23s;
+}
+header .set div:nth-child(10){
+    /*react*/
+    right: 30%;
+    bottom: 60%;
+    animation: animate 30s linear infinite;
+    animation-delay: -85s;
+}
+header .set div:nth-child(11){
+    /*angular*/
+    right: 10%;
+    bottom: 10%;
+    animation: animate 30s linear infinite;
+    animation-delay: -87s;
+}
+header .set div:nth-child(12){
+    /*sketch*/
+    right: 5%;
+    bottom: 50%;
+    animation: animate 30s linear infinite;
+    animation-delay: -25s;
+}
+header .set div:nth-child(13){
+    /*vue*/
+    left: 20%;
+    bottom: 10%;
+    animation: animate 30s linear infinite;
+    animation-delay: -84s;
+}
+header .set div:nth-child(14){
+    /*git*/
+    right: 18%;
+    bottom: 60%;
+    animation: animate 30s linear infinite;
+    animation-delay: -55s;
+}
+
+
+@keyframes animate{
+    0%{
+        
+        transform: translateX(20px) rotate(0deg);
+    }
+    10%{
+               
+        transform: translateY(20px) rotate(0deg);
+    }
+    20%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform: translateX(20px) rotate(90deg);
+    }
+    60%{
+        transform: translateX(20px) rotate(-90deg);
+    }
+    80%{
+        transform: translateX(-20px) rotate(180deg);
+    }
+    100%{
+        transform: translateX(20px) rotate(-90deg);
+    }
+    
+}
